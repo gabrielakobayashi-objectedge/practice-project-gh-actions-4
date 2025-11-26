@@ -48,8 +48,6 @@ jobs:
           npm ci
           npm run build
 
-      - name: Deploy application
-        run:
-          npm run deploy
+      
 
       
