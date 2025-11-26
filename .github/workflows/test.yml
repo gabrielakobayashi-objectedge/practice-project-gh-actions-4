@@ -48,6 +48,9 @@ jobs:
           npm ci
           npm run build
 
+      - name: Deploy code
+        run: echo 'Deploying application...'
+
       
 
       
