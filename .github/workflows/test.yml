@@ -13,6 +13,7 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
   
   test:
+    needs: actionlint
     runs-on: ubuntu-latest
     steps:
       - name: Get code
