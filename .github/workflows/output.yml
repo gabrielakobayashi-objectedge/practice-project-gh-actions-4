@@ -1,20 +1,20 @@
 name: output-event-details
 on: issues
 jobs:
-  output-event-details:
+  issues:
     runs-on: ubuntu-latest
     steps:
-      - name: Output-Issue-Details
+      - name: Output Issue Details
         run: |
           echo "Event Name: ${{ github.event_name }}"
           echo "Action: ${{ github.event.action }}"
           echo "Issue Number: ${{ github.event.issue.number }}"
           echo "Issue Title: ${{ github.event.issue.title }}"
           echo "Issue Body: ${{ github.event.issue.body }}"
-  output-issue-and-github-context:
+  github-output:
     runs-on: ubuntu-latest
     steps:
-      - name: Output-issue-event-and-github-context
+      - name: Output Issue Details from github context
         run: |
           echo "Full Event Payload: ${{ toJson(github.event) }}"
           echo "Repository: ${{ github.repository }}"
