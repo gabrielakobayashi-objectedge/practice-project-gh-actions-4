@@ -1,5 +1,10 @@
 name: Output Issue Details
-on: issues
+on:
+  issues:
+    types:
+      - opened
+      - edited
+      - closed
 jobs:
   output-info:
     runs-on: ubuntu-latest
