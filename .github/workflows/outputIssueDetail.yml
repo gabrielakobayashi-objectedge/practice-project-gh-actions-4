@@ -1,7 +1,7 @@
 name: output-event-details
 on: issues
 jobs:
-  output event details:
+  output-event-details:
     runs-on: ubuntu-latest
     steps:
       - name: Output-Issue-Details
@@ -11,7 +11,7 @@ jobs:
           echo "Issue Number: ${{ github.event.issue.number }}"
           echo "Issue Title: ${{ github.event.issue.title }}"
           echo "Issue Body: ${{ github.event.issue.body }}"
-  output issue event & github context:
+  output-issue-and-github-context:
     runs-on: ubuntu-latest
     steps:
       - name: Output-issue-event-and-github-context
